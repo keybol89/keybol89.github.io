@@ -5,23 +5,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PinoyStream IPTV</title>
-  <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to right, #141E30, #243B55);
-      color: #fff;
+      background-color: #f9f9f9;
+      color: #333;
     }
     header {
-      background: #1c1c1c;
+      background: #ffffff;
       padding: 20px;
       text-align: center;
+      border-bottom: 1px solid #ddd;
     }
     header h1 {
       margin: 0;
-      color: #00ffcc;
+      color: #007bff;
     }
     nav {
       text-align: center;
@@ -29,7 +29,7 @@
     }
     nav a {
       margin: 0 15px;
-      color: #00ffcc;
+      color: #007bff;
       text-decoration: none;
       font-weight: 600;
     }
@@ -39,19 +39,19 @@
     }
     .hero h2 {
       font-size: 2.5em;
-      color: #fff;
+      color: #333;
     }
     .hero p {
-      color: #ccc;
+      color: #555;
       font-size: 1.2em;
     }
     .cta {
       margin-top: 30px;
     }
     .cta a {
-      background: #00ffcc;
+      background: #007bff;
       padding: 15px 25px;
-      color: #000;
+      color: #fff;
       font-weight: bold;
       border-radius: 5px;
       text-decoration: none;
@@ -59,8 +59,9 @@
     footer {
       text-align: center;
       padding: 20px;
-      background: #1c1c1c;
-      color: #888;
+      background: #ffffff;
+      border-top: 1px solid #ddd;
+      color: #666;
     }
   </style>
 </head>
@@ -79,161 +80,6 @@
     <div class="cta">
       <a href="channels.html">Browse Channels</a>
     </div>
-  </div>
-  <footer>
-    &copy; 2025 PinoyStream IPTV. All rights reserved.
-  </footer>
-</body>
-</html>
-
-
-/* channels.html */
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Available Channels - PinoyStream IPTV</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    body {
-      background: #111;
-      color: #eee;
-      font-family: 'Poppins', sans-serif;
-    }
-    header, footer {
-      background: #1c1c1c;
-      padding: 20px;
-      text-align: center;
-    }
-    h1 {
-      color: #00ffcc;
-    }
-    nav a {
-      color: #00ffcc;
-      margin: 0 10px;
-      text-decoration: none;
-    }
-    .channels-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 40px;
-    }
-    .channel-card {
-      background: #222;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-      text-align: center;
-    }
-    .channel-card h3 {
-      color: #00ffcc;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Available Channels</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="channels.html">Channels</a>
-      <a href="about.html">About</a>
-    </nav>
-  </header>
-  <div class="channels-list">
-    <div class="channel-card">
-      <h3>ABS-CBN</h3>
-      <p>Entertainment & News</p>
-    </div>
-    <div class="channel-card">
-      <h3>GMA Network</h3>
-      <p>Drama, Comedy, News</p>
-    </div>
-    <div class="channel-card">
-      <h3>TV5</h3>
-      <p>Variety & Sports</p>
-    </div>
-    <div class="channel-card">
-      <h3>Knowledge Channel</h3>
-      <p>Educational Programming</p>
-    </div>
-    <div class="channel-card">
-      <h3>PTV 4</h3>
-      <p>Public Affairs & News</p>
-    </div>
-    <div class="channel-card">
-      <h3>One PH</h3>
-      <p>Talk Shows & Current Affairs</p>
-    </div>
-    <div class="channel-card">
-      <h3>Cinemax Pinoy</h3>
-      <p>Filipino Movies & Action</p>
-    </div>
-    <div class="channel-card">
-      <h3>Jeepney TV</h3>
-      <p>Classic Filipino Shows</p>
-    </div>
-  </div>
-  <footer>
-    &copy; 2025 PinoyStream IPTV. All rights reserved.
-  </footer>
-</body>
-</html>
-
-
-/* about.html */
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>About Us - PinoyStream IPTV</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    body {
-      background: #0f0f0f;
-      color: #eee;
-      font-family: 'Poppins', sans-serif;
-    }
-    header, footer {
-      background: #1c1c1c;
-      padding: 20px;
-      text-align: center;
-    }
-    nav a {
-      color: #00ffcc;
-      margin: 0 10px;
-      text-decoration: none;
-    }
-    .content {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
-    }
-    h2 {
-      color: #00ffcc;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>About PinoyStream IPTV</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="channels.html">Channels</a>
-      <a href="about.html">About</a>
-    </nav>
-  </header>
-  <div class="content">
-    <h2>Who We Are</h2>
-    <p>PinoyStream IPTV is a premium Filipino IPTV provider offering high-quality live television, on-demand shows, and entertainment from the Philippines and beyond.</p>
-    <h2>Our Mission</h2>
-    <p>To deliver seamless, affordable, and accessible digital TV experiences for Filipinos anywhere in the world.</p>
-    <h2>Why Choose Us</h2>
-    <ul>
-      <li>HD Streaming with minimal buffering</li>
-      <li>24/7 Access to top Pinoy channels</li>
-      <li>Friendly customer support</li>
-    </ul>
   </div>
   <footer>
     &copy; 2025 PinoyStream IPTV. All rights reserved.
