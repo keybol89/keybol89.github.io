@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IPTV Philippines</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #e3e3e3;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: #444;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #007bff;
+    }
+    main {
+      padding: 2rem;
+    }
+    .page {
+      display: none;
+    }
+    .active {
+      display: block;
+    }
+    .channel-list {
+      background-image: url('https://cdn.pixabay.com/photo/2016/11/29/09/32/tv-1869561_1280.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 2rem;
+      border-radius: 12px;
+    }
+    .channel-list ul {
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 1rem;
+      border-radius: 8px;
+      list-style-type: none;
+    }
+    .channel-list li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>IPTV Philippines</h1>
+    <nav>
+      <a href="#" onclick="showPage('home')">Home</a>
+      <a href="#" onclick="showPage('channels')">Channels</a>
+      <a href="#" onclick="showPage('about')">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="page active">
+      <h2>Welcome to IPTV Philippines</h2>
+      <p>Enjoy a curated selection of IPTV channels from across the Philippines. Simple. Accessible. Reliable.</p>
+    </section>
+
+    <section id="channels" class="page">
+      <h2>Available Channels</h2>
+      <div class="channel-list">
+        <ul>
+          <li>ABS-CBN</li>
+          <li>GMA Network</li>
+          <li>TV5</li>
+          <li>PTV 4</li>
+          <li>IBC 13</li>
+          <li>AksyonTV</li>
+          <li>Net 25</li>
+          <li>UNTV</li>
+          <li>Knowledge Channel</li>
+          <li>ANC (ABS-CBN News Channel)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about" class="page">
+      <h2>About</h2>
+      <p>We provide streamlined IPTV services focused on channels based in the Philippines. Whether you’re at home or abroad, stay connected to your favorite Filipino programs with ease.</p>
+    </section>
+  </main>
+
+  <script>
+    function showPage(pageId) {
+      document.querySelectorAll('.page').forEach(page => {
+        page.classList.remove('active');
+      });
+      document.getElementById(pageId).classList.add('active');
+    }
+  </script>
+</body>
+</html>
